@@ -73,3 +73,114 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* VoiceFlow Animations */
+
+/* Connecting: pulsing ring */
+.voiceflow-pulse-ring {
+  animation: vf-pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes vf-pulse {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.08);
+  }
+}
+
+/* Listening: expanding rings */
+.voiceflow-expand-ring-1 {
+  animation: vf-expand-1 2s ease-out infinite;
+}
+
+.voiceflow-expand-ring-2 {
+  animation: vf-expand-2 2s ease-out infinite;
+  animation-delay: 0.4s;
+}
+
+.voiceflow-expand-ring-3 {
+  animation: vf-expand-3 2s ease-out infinite;
+  animation-delay: 0.8s;
+}
+
+@keyframes vf-expand-1 {
+  0% {
+    opacity: 0.25;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.3);
+  }
+}
+
+@keyframes vf-expand-2 {
+  0% {
+    opacity: 0.15;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.25);
+  }
+}
+
+@keyframes vf-expand-3 {
+  0% {
+    opacity: 0.08;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+}
+
+/* Thinking: rotating dots container */
+.voiceflow-thinking-container {
+  animation: vf-rotate 3s linear infinite;
+}
+
+@keyframes vf-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Thinking: individual dot pulse */
+.voiceflow-thinking-dot {
+  background: hsl(0, 0%, 60%);
+  animation: vf-dot-pulse 1s ease-in-out infinite;
+}
+
+@keyframes vf-dot-pulse {
+  0%, 100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* Speaking: waveform bars */
+.voiceflow-bar {
+  animation: vf-bar 0.8s ease-in-out infinite;
+}
+
+@keyframes vf-bar {
+  0%, 100% {
+    height: 6px;
+    opacity: 0.3;
+  }
+  50% {
+    height: 24px;
+    opacity: 0.7;
+  }
+}

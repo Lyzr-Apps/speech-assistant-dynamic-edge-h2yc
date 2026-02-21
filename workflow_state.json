@@ -1,0 +1,21 @@
+{
+  "agents": [
+    {
+      "agent_id": "699960e58cfc4d116987bc9a",
+      "agent_name": "Voice Assistant Agent",
+      "agent_type": "voice",
+      "node_id": "voice_agent",
+      "provider": "openai",
+      "model": "gpt-4.1",
+      "voice_config": {
+        "initiator": "human",
+        "message": "",
+        "language": "English",
+        "voice": "sage"
+      },
+      "response_schema_path": "response_schemas/voice_assistant_agent_response.json"
+    }
+  ],
+  "workflow_file": "workflow.json",
+  "created_at": "2026-02-21"
+}

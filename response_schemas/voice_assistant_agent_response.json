@@ -1,0 +1,8 @@
+{
+  "agent_name": "Voice Assistant Agent",
+  "agent_id": "699960e58cfc4d116987bc9a",
+  "description": "A friendly, casual conversational AI that interacts with users entirely through voice. Processes spoken input, maintains conversation context, and delivers fast spoken responses.",
+  "agent_type": "voice",
+  "accessor": "websocket",
+  "auto_generated": true
+}
